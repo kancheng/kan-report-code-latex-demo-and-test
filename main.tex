@@ -1,0 +1,46 @@
+%\documentclass{article}
+\documentclass{report} % Use the custom report.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=1.0in]{geometry} % Document margins
+\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx} 
+\usepackage{float}
+\usepackage{subfigure}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+    % backgroundcolor=\color{red!50!green!50!blue!50},
+    % 程式碼塊背景色為淺灰色
+    rulesepcolor= \color{gray}, % 程式碼塊邊框顏色
+    breaklines=true,  % 程式碼過長則換行
+    numbers=left, % 行號在左側顯示
+    numberstyle= \small,% 行號字型
+    % eywordstyle= \color{red,% 關鍵字顏色
+    commentstyle=\color{gray}, % 註釋顏色
+    frame=shadowbox % 用方框框住程式碼塊
+    }
+
+\title{\textbf{Test Code}}
+\author{Kan, Hao-Cheng}
+\date{7 October,2021}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+	\begin{lstlisting}[language={java}]
+// Java code
+public class Main{
+	public static void main(String[]args){
+		System.out.println("hello,world");
+	}
+}
+	\end{lstlisting}
+
+\end{document}
+\usepackage{listings}
